@@ -1,42 +1,14 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import React from 'react';
+import { render } from 'react-dom';
+import {Flex, IconButton, Box} from '@chakra-ui/core';
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+export default function Header(props){
+    return(
+        <Flex position='sticky' zIndex='2' top='0' display={props.display || ['block', 'none']} bg='gray.50'> 
+            <Box >
+                <IconButton  icon='arrow-up' bg='none' size='sm'/>
+            </Box>
+        </Flex>
+    )
 }
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header
