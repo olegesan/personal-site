@@ -1,14 +1,19 @@
 import React from 'react'
-import {ThemeProvider} from '@chakra-ui/core'
-import customTheme from '../gatsby-plugin-chakra-ui/theme';
+import {ThemeProvider, Flex, CSSReset} from '@chakra-ui/core'
+import {customTheme} from '../gatsby-plugin-chakra-ui/theme';
 import Header from '../components/header'
-// import Layout from './layout-old'
+
 
 export default  function Layout({children}){
     return(
         <ThemeProvider theme={customTheme}>
-            <Header display='none'/>
-            {children}
+            <CSSReset/>
+                <Header display='none'/>
+                <Flex flexDir={["column",'column','row']} 
+                bg='gray.50' color='gray.700'
+                >
+                    {children}
+                </Flex>
          </ThemeProvider>
     )
 }

@@ -1,18 +1,6 @@
 import {theme} from '@chakra-ui/core'
-
-export const customTheme = {
+ export const customTheme = {
     ...theme,
-    colors: {
-        gray:{
-            50:'#F7FAFC',
-            700:'#2D3748'
-        }
-    },
-    fonts:{
-        body: "Menlo, monospace",
-        heading: "Menlo, monospace",
-        mono: "Menlo, monospace",
-    },
     fontSizes: {
         xs: "12px",
         sm: "14px",

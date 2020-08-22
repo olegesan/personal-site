@@ -1,11 +1,14 @@
 import React from 'react'
-import {Text, Heading, Flex} from '@chakra-ui/core'
+import {Text, Heading, Flex, Box} from '@chakra-ui/core'
 
 export default function Section({children, title}){
     return(
-        <Flex flexDir={['column']} border='1px solid black' margin='2'>
-            <Heading>{title}</Heading>
-            {children}
+        <Flex flexDir={['column']}  margin={['8','16']}>
+            <Heading textAlign='center'marginBottom={['2']}>{title}</Heading>
+            <Box >
+                {children}
+                
+            </Box>
         </Flex>
     )
 }

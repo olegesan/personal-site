@@ -5,21 +5,16 @@ import Icon from './icon';
 const avatarImg = require('../images/avatar.png')
 export default function PersonalInfo(){
     return(
-        <Flex align='center' textAlign='center' justify='center' flexDir='row' border='black 1px solid' bg='gray.50'>
-            <Flex flexDir='column' color='gray.700'>
-                <Avatar name="Oleg Bazylnikov" mb='0' size='2xl' src={avatarImg}></Avatar>
-                <Text>Oleg Bazylnikov</Text>
-                <Text>Software Engeneer</Text>
-                <Flex>
-                    <Icon>
-                         <Box as={ImGithub} ></Box>
-                    </Icon>
-                    <Icon>
-                        <Box as={ImLinkedin} ></Box>
-                    </Icon>
-                    <Icon>
-                        <Box as={ImMail}></Box>
-                    </Icon>
+        <Flex align='center' textAlign='center' justify='center' flexDir='row'  bg='gray.50' 
+        h={['','','100vh']} w={['','','4xl','5xl','6xl']} marginTop={['2','2','0']} >
+            <Flex flexDir='column' color='gray.700' align='center'>
+                <Box  marginBottom='0'  ><Image size={['150px', '200px', '250px','' ,'300px']} borderRadius='9999px' src={avatarImg}/></Box>
+                <Text fontSize={['md', 'md', 'xl']} >Oleg Bazylnikov</Text>
+                <Text fontSize={['md', 'md', 'xl']} >Software Engeneer</Text>
+                <Flex flexDir='row' justify='space-around'>
+                        <Icon as={ImGithub} href='https://github.com/olegesan'/>
+                        <Icon as={ImLinkedin} href='https://www.linkedin.com/in/oleg-bazylnikov/'/>
+                        <Icon as={ImMail} href="mailto:oleg.bazylnikov@gmail.com"/>
                 </Flex>
             </Flex>
         </Flex>
