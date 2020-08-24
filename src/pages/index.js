@@ -13,10 +13,9 @@ import Experience from "../components/experience"
 import Projects from "../components/projectText"
 
 const Home = () => {
-
   return(
-    <Layout>
-        <PersonalInfo/>
+    <Layout >
+        <PersonalInfo />
         <Flex flexDir='column'
         >
         <Skills/>
