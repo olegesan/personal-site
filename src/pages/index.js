@@ -11,10 +11,11 @@ import SEO from "../components/seo"
 import Experience from "../components/experience"
 // import Projects from "../components/projectsBoxes"
 import Projects from "../components/projectText"
+import TehemeComponent from "../components/themeComponent"
 
 const Home = () => {
   return(
-    <Layout >
+    <TehemeComponent >
         <PersonalInfo />
         <Flex flexDir='column'
         >
@@ -23,7 +24,7 @@ const Home = () => {
         <Projects/>
         
         </Flex>
-    </Layout>
+    </TehemeComponent>
   )
 }
 

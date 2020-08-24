@@ -7,7 +7,7 @@ import {ImGithub} from 'react-icons/im'
 
 export default function SubSection({children, title,date, location, github}){
     return(
-        <Flex flexDir='column' borderBottom="0.5px solid" borderColor='gray.200'  marginX='' 
+        <Flex flexDir='column'  marginY='3' 
         >
            <Flex flexDir={['column','column', 'row']} align='baseline'>
                 <Flex flexDir='row' align='baseline' marginTop={['2','3','5']} marginBottom={['2']}>
