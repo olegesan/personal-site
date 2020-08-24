@@ -21,7 +21,7 @@ export default function PersonalInfo(){
         <Flex float='left' align='center' textAlign='center' justify='center' flexDir='row'  bg='gray.50' 
         h={['','','100vh']} w={['','','4xl','5xl','6xl']} marginTop={['2','2','0']} position={['','','sticky']} top='0px'>
             <Flex flexDir='column' color='gray.700' align='center' >
-                <Box  marginBottom='0'  ><Image size={['150px', '200px', '250px','' ,'300px']} borderRadius='9999px' src={avatarImg}/></Box>
+                <Box  marginBottom='0'  ><Image size={['150px', '200px', '200px','' ,'300px']} borderRadius='9999px' src={avatarImg}/></Box>
                 <Text fontSize={['md', 'md', 'xl']} >Oleg Bazylnikov</Text>
                 <Text fontSize={['md', 'md', 'xl']}  >Software Engeneer</Text>
                 <Flex flexDir='row' justify='space-around' ref={trigger} >

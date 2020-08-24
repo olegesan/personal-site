@@ -1,6 +1,7 @@
 import React from 'react'
 import {ThemeProvider, Flex, CSSReset, Box} from '@chakra-ui/core'
 import {customTheme} from '../gatsby-plugin-chakra-ui/theme';
+import Seo from './seo'
 import Header from '../components/header'
 
 
@@ -8,6 +9,7 @@ export default  function Layout({children}){
     return(
         <ThemeProvider theme={customTheme}>
             <CSSReset/>
+            <Seo/>
                 <Header display={['none']}/>
 
                     <Flex flexDir={["column",'column','row']} 

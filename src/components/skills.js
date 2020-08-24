@@ -17,18 +17,18 @@ export default function Skills({children}){
           </Description> */}
           <SubSection title='Frontend Development'>
             <Description>
-            React.JS, HTML, CSS, Javascript, SCSS, JQuery, Bootstrap
+            React.JS, Gatsby, Chakra-UI, HTML, CSS, Javascript, SCSS, JQuery, Bootstrap
             </Description>
           </SubSection>
 
           <SubSection title='Backend Development'>
             <Description>
-              Python, Django, Express, Flask, Node, MongoDB, SQLite
+              Python, Django, Express, Flask, Node, MongoDB, SQLite, GraphQL, MySQL
             </Description>
           </SubSection>
           <SubSection title='Python Libraries'>
               <Description>
-                Nampy, Pandas, Matplotlib, BeautifulSoup, Requests, Folium
+                Nampy, BeautifulSoup, Requests, Folium
               </Description>
             </SubSection>
         </Section>
