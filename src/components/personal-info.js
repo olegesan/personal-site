@@ -28,9 +28,9 @@ export default function PersonalInfo(){
     })
     return(
         <Flex float='left' align='center' textAlign='center' justify='center' flexDir='row'  bg={bgColor[colorMode]} color={color[colorMode]}
-        h={['','','100vh']} w={['','','4xl','5xl','6xl']} marginTop={['2','2','0']} position={['','','sticky']} top='0px'>
-            <Flex flexDir='column'  align='center' >
-                <Box  marginBottom='0' paddingTop='2'  ><Image size={['150px', '200px', '200px','' ,'300px']} borderRadius='9999px' src={avatarImg}/></Box>
+        h={['','','100vh']} w={['','','4xl','5xl','6xl']} marginTop={['2','2','0']} position={['','','sticky']} top='0px' marginLeft={['','16']}>
+            <Flex flexDir='column'  align='center'>
+                <Box  marginBottom='0' paddingTop='2'  ><Image size={['150px', '180px', '200px','' ,'300px']} borderRadius='9999px' src={avatarImg}/></Box>
                 <Text fontSize={['md', 'md', 'xl']} >Oleg Bazylnikov</Text>
                 <Text fontSize={['md', 'md', 'xl']}  >Software Engeneer</Text>
                 <Flex flexDir='row' justify='space-around' ref={trigger} >
