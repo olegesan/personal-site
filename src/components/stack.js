@@ -1,5 +1,5 @@
 import React from 'react'
-import {Flex, Box, Heading} from '@chakra-ui/core'
+import { Box } from '@chakra-ui/core'
 
 export default function Stack({children, stack}){
     return(

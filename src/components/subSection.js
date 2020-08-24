@@ -1,5 +1,5 @@
 import React from 'react'
-import {Flex, Box, Heading, IconButton} from '@chakra-ui/core'
+import {Flex, Box, Heading} from '@chakra-ui/core'
 import Date from './date'
 import Location from './location'
 import {ImGithub} from 'react-icons/im'

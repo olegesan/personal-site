@@ -1,10 +1,9 @@
 import React from 'react';
-import {Box, Flex, Text} from '@chakra-ui/core'
+
 import Section from './section'
 import SubSection from './subSection'
 import Description from './description'
-import ProjectBox from './projectBox'
-import Stack from './stack'
+
 import ProjectInfo from './projectInfo'
 
 const projects = [{
@@ -13,16 +12,17 @@ title:"Christmas List",
 github: 'https://github.com/olegesan/christmas_list_webapp',
 stack:'Python, Django, Bootstrap, JQuery',
 date:'Dec, 2019',
-stack:"Python, Django, JQuery, Bootstrap",
-description:"Blahblah Pieds des ou la j'ai  vu de ou flache.."},
+description:`Big family is going to get gifts for each other, but dad/mom is tired of managing the gifts assignment and other tiny tasks. 
+Christma list app is meant to manage family gift list, where one person is in charge of gifts assignment, and other can only look up, what gifts they need to get, or tell what gifts they need.
+It features an algorithm of randomly assigning gifts. It uses Django for managing DB and backend. Frontend is developed using jQuery and Bootstrap.`},
 {
     image:'bible_scraper',
     github:'https://github.com/olegesan/bible_scapper',
     title:'Bible Scraper',
     stack:'Python, Requests, BeautifulSoup, JSON',
     date:'Jan, 2020',
-    stack: "Python, BeautifulSoup, Requests",
-    description:"Nonumy erat diam voluptua sanctus ipsum ipsum. Diam diam justo labore tempor kasd at eirmod dolore. Amet ipsum vero sit."
+    description:`A simple console application that fetches a specified version of Bible from bible.com. It uses BeautifulSoup to parse fetched html pages and outputs a JSON file that can be used for other purposes.
+    It was a small personal project of of necessity and inability to find json Bibles on the internet.`
 },
 {
     image:'bible_react',
@@ -30,8 +30,7 @@ description:"Blahblah Pieds des ou la j'ai  vu de ou flache.."},
     title:'Bible React',
     stack:'React.JS, Flask',
     date:'Feb, 2020',
-    stack: "Python, BeautifulSoup, Requests",
-    description:"Nonumy erat diam voluptua sanctus ipsum ipsum. Diam diam justo labore tempor kasd at eirmod dolore. Amet ipsum vero sit."
+    description:"It is a very simple React application that using my bible api loads chapters from ESV bible."
 },
 {
     image:'wedding_react',
@@ -39,16 +38,17 @@ description:"Blahblah Pieds des ou la j'ai  vu de ou flache.."},
     title:'Wedding React',
     stack:'React.js, MongoDB, Node.js, Twillo SendGrid',
     date:'Mar, 2020',
-    stack: "React.JS, MongoDB, SendGrid by Twillo, ",
-    description:"Nonumy erat diam voluptua sanctus ipsum ipsum. Diam diam justo labore tempor kasd at eirmod dolore. Amet ipsum vero sit."
+    description:`Beautiful site developed for couples that are getting married. It takes advantage of React components and MongoDB database and provides great user experience.
+    Implemented  RSVP form validates input and upon successful writing of the data to the remote DB sends out an email with RSVP information. It was great practice of making a full-stack web application.
+    `
 }]
 export default function Projects({children}){
 
     return(
         <Section title='Projects'>
-            {projects.reverse().map(project=>{
+            {projects.reverse().map((project, index)=>{
                 return(
-                    <SubSection title={project.title}
+                    <SubSection key={index} title={project.title}
                      github={project.github}
                     >
                         <Description>

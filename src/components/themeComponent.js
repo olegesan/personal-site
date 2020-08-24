@@ -1,8 +1,6 @@
-import React, { useEffect } from 'react'
-import {ThemeProvider, Flex, CSSReset, ColorModeProvider,Box, Button, useColorMode} from '@chakra-ui/core'
+import React  from 'react'
+import {ThemeProvider,  CSSReset, ColorModeProvider} from '@chakra-ui/core'
 import {customTheme} from '../gatsby-plugin-chakra-ui/theme';
-import Seo from './seo'
-import Header from '../components/header'
 import Layout from './layout'
 
 

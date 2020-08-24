@@ -1,7 +1,6 @@
 import React from 'react'
-import {Text, Flex, theme} from '@chakra-ui/core'
+import {Text} from '@chakra-ui/core'
 
-console.log(theme)
 export default function Description({children}){
     return(
         <Text >

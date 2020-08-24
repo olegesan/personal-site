@@ -1,5 +1,4 @@
 import React from 'react'
-import { render } from 'react-dom'
 import {Text} from '@chakra-ui/core'
 export default function Date({children, date, marginBottom}){
     return(

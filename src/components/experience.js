@@ -1,5 +1,4 @@
 import React from 'react';
-import {Box, Flex, Text} from '@chakra-ui/core'
 import Section from '../components/section'
 import SubSection from '../components/subSection'
 import Description from '../components/description'
@@ -8,9 +7,6 @@ import Description from '../components/description'
 export default function Experience({children}){
     return(
         <Section title="Experience">
-            {/* <Description>
-            Life is useless without experiences
-            </Description> */}
           <SubSection title='MSIT Peer Tutor' 
           date='Oct, 2019 - Present'
           location='Academic Enhancement Center, GGC'>

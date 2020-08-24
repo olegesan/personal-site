@@ -1,5 +1,5 @@
 import React from 'react'
-import {Text, Heading, Flex, Box, useColorMode} from '@chakra-ui/core'
+import {Heading, Flex, Box, useColorMode} from '@chakra-ui/core'
 
 export default function Section({children, title}){
     const {colorMode} = useColorMode();

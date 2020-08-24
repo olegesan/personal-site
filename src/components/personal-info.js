@@ -1,7 +1,7 @@
 import React, {useEffect, useState, useRef} from 'react'
 import {ImGithub, ImLinkedin,ImMail} from 'react-icons/im';
 import {BsMoon, BsSun} from 'react-icons/bs'
-import {Box, Flex, Image, Avatar, Text, Button, useColorMode} from '@chakra-ui/core'
+import {Box, Flex, Image, Text, useColorMode} from '@chakra-ui/core'
 import Icon from './icon';
 const avatarImg = require('../images/avatar.png')
 export default function PersonalInfo(){
@@ -37,7 +37,7 @@ export default function PersonalInfo(){
                         <Icon as={ImGithub} href='https://github.com/olegesan'/>
                         <Icon as={ImLinkedin} href='https://www.linkedin.com/in/oleg-bazylnikov/'/>
                         <Icon as={ImMail} href="mailto:oleg.bazylnikov@gmail.com"/>
-                        <Icon as={colorMode=='dark'?BsSun:BsMoon} onClick={toggleColorMode}/>
+                        <Icon as={colorMode==='dark'?BsSun:BsMoon} onClick={toggleColorMode}/>
                 </Flex>
                 {
                     isSticky?
@@ -45,7 +45,7 @@ export default function PersonalInfo(){
                         <Icon as={ImGithub} href='https://github.com/olegesan'/>
                         <Icon as={ImLinkedin} href='https://www.linkedin.com/in/oleg-bazylnikov/'/>
                         <Icon as={ImMail} href="mailto:oleg.bazylnikov@gmail.com"/>
-                        <Icon as={colorMode=='dark'?BsSun:BsMoon} onClick={toggleColorMode}/>
+                        <Icon as={colorMode==='dark'?BsSun:BsMoon} onClick={toggleColorMode}/>
                 </Flex>
                 : null
                 }

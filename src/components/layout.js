@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react'
-import {ThemeProvider, Flex, CSSReset, ColorModeProvider,Box, Button, useColorMode} from '@chakra-ui/core'
-import {customTheme} from '../gatsby-plugin-chakra-ui/theme';
+import React  from 'react'
+import { Flex,Box, useColorMode} from '@chakra-ui/core'
+
 import Seo from './seo'
-import Header from '../components/header'
+
 
 
 export default  function Layout({children}){
@@ -13,7 +13,7 @@ export default  function Layout({children}){
        <Box>
                 <Seo/>
                         <Flex flexDir={["column",'column','row']} 
-                        bg={bgColor[colorMode]}color='gray.700'
+                        bg={bgColor[colorMode]}color={color[colorMode]}
                         >
                             {children}
                         </Flex>

@@ -1,17 +1,13 @@
 import React from "react"
-import { Link } from "gatsby"
-import {Flex, Box} from "@chakra-ui/core"
-import Layout from '../components/layout'
+import {Flex} from "@chakra-ui/core"
 import PersonalInfo from '../components/personal-info'
-import Section from '../components/section'
-import SubSection from '../components/subSection'
 import Skills from '../components/skills'
 // import Layout from "../components/layout-old"
-import SEO from "../components/seo"
 import Experience from "../components/experience"
 // import Projects from "../components/projectsBoxes"
 import Projects from "../components/projectText"
 import TehemeComponent from "../components/themeComponent"
+import Certifications from "../components/certifications"
 
 const Home = () => {
   return(
@@ -20,8 +16,9 @@ const Home = () => {
         <Flex flexDir='column'
         >
         <Skills/>
-        <Experience/>
         <Projects/>
+        <Certifications/>
+        <Experience/>
         
         </Flex>
     </TehemeComponent>
