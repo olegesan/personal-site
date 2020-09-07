@@ -23,7 +23,7 @@ function ColorModeButton(){
           fontSize="20px"
           size='sm'
           onClick={toggleColorMode}
-          icon={colorMode === "light" ? "moon" : 'sun'}
+          icon={colorMode === "dark" ? "sun" : 'moon'}
           transition="all 0.2s"
         />
 
