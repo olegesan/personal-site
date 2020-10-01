@@ -12,7 +12,9 @@ import Certifications from "../components/certifications"
 const Home = () => {
   return(
     <TehemeComponent >
-        <PersonalInfo />
+      
+      <PersonalInfo />
+      <div className="content">
         <Flex flexDir='column'
         >
         <Skills/>
@@ -21,6 +23,7 @@ const Home = () => {
         <Experience/>
         
         </Flex>
+      </div>
     </TehemeComponent>
   )
 }

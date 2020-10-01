@@ -34,9 +34,9 @@ export default function PersonalInfo(){
         <Flex float='left' align='center' textAlign='center' justify='center' flexDir='row'  bg={bgColor[colorMode]} color={color[colorMode]}
         h={['','','100vh']} w={['','','4xl','5xl','6xl']} marginTop={['2','2','0']} position={['','','sticky']} top='0px' marginLeft={['','16']} marginRight={['','16']}>
             <Flex flexDir='column'  align='center'>
-                <Box  marginBottom='0' paddingTop='2'  ><Image size={['150px', '180px', '200px','' ,'300px']} borderRadius='9999px' src={avatarImg}/></Box>
+                <Box  marginBottom='0' paddingTop='2'  ><Image size={['150px', '180px', '','' ,'250px']} borderRadius='9999px' src={avatarImg}/></Box>
                 <Text fontSize={['md', 'md', 'xl']} >Oleg Bazylnikov</Text>
-                <Text fontSize={['md', 'md', 'xl']}  >Software Engeneer</Text>
+                <Text fontSize={['md', 'md', 'xl']}  >Software Engineer</Text>
                 <Flex flexDir='row' justify='space-around' ref={trigger} >
                         <Icon as={ImGithub} href='https://github.com/olegesan'/>
                         <Icon as={ImLinkedin} href='https://www.linkedin.com/in/oleg-bazylnikov/'/>

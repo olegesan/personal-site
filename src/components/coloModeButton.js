@@ -9,8 +9,12 @@ function ColorModeButton(){
     const bgColor = { light: "gray.50", dark: "gray.700" };
     const color = { light: "gray.700", dark: "gray.50"  };
     useEffect(()=>{
-        console.log(colorMode)
+
     }, [colorMode])
+    const handleClick = () =>{
+      document.getElementsByTagName("html")[0].setAttribute("style", `background-color: ${colorMode === 'dark' ? "#F7FAFC" : '#2D3748'}`);
+      toggleColorMode();
+    }
     return(
 
         <IconButton
@@ -22,7 +26,7 @@ function ColorModeButton(){
           color={`mode.${colorMode}.text`}
           fontSize="20px"
           size='sm'
-          onClick={toggleColorMode}
+          onClick={handleClick}
           icon={colorMode === "dark" ? "sun" : 'moon'}
           transition="all 0.2s"
         />
