@@ -6,6 +6,7 @@ import Skills from '../components/skills'
 import Experience from "../components/experience"
 // import Projects from "../components/projectsBoxes"
 import Projects from "../components/projectText"
+import Hackathon from "../components/hackathons"
 import TehemeComponent from "../components/themeComponent"
 import Certifications from "../components/certifications"
 
@@ -19,8 +20,10 @@ const Home = () => {
         >
         <Skills/>
         <Projects/>
-        <Certifications/>
         <Experience/>
+        <Hackathon/>
+        <Certifications/>
+
         
         </Flex>
       </div>

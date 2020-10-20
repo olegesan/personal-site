@@ -6,20 +6,20 @@ import Description from '../components/description'
 export default function Skills({children}){
     return(
         <Section title="Skills">
-          <SubSection title='Frontend Development'>
+          <SubSection title='Frontend'>
             <Description>
-            React.JS, Gatsby, Chakra-UI, HTML, CSS, Javascript, SCSS, JQuery, Bootstrap
+            React.JS · Gatsby · Chakra-UI · HTML5 · CSS · JQuery · Bootstrap
             </Description>
           </SubSection>
 
-          <SubSection title='Backend Development'>
+          <SubSection title='Backend'>
             <Description>
-              Python, Django, Express, Flask, Node, MongoDB, SQLite, GraphQL, MySQL
+              NodeJS · Django · Express.js · Flask · GraphQL · REST API · Laravel
             </Description>
           </SubSection>
-          <SubSection title='Python Libraries'>
+          <SubSection title='Programming'>
               <Description>
-                Nampy, BeautifulSoup, Requests, Folium
+                JavaScript · Java · Python · PHP
               </Description>
             </SubSection>
         </Section>

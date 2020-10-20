@@ -2,7 +2,7 @@ import React from 'react';
 import Section from '../components/section'
 import SubSection from '../components/subSection'
 import Description from '../components/description'
-
+import BuletPoints from './buletpoints'
 
 export default function Experience({children}){
     return(
@@ -10,14 +10,19 @@ export default function Experience({children}){
           <SubSection title='MSIT Peer Tutor' 
           date='Oct, 2019 - Present'
           location='Academic Enhancement Center, GGC'>
-              <Description>
+              <BuletPoints>
+                  {[`Reviewed students' code written in Python, Java, C#, PHP, SQL. Helped debugging source code and explained proper code formatting `,
+                `Helped students to optimize their code to improve BigO performance by explaining suitable algorithms, data structures, and best practices`,
+                `Provided students with foundations of Object Oriented Programming and helped them to build school projects by implementing OOP`]}
+              </BuletPoints>
+              {/* <Description>
               Help multiple students with undestanding 
               of fundamental CS concepts. Reviewed their 
               code to debug it and make more efficient, 
               when necessary.
-              </Description>
+              </Description> */}
           </SubSection>
-          <SubSection title='Foreign Language Teacher' 
+          {/* <SubSection title='Foreign Language Teacher' 
           date='Aug, 2018 - Aug, 2019'
           location='ABIE, China'>
               <Description>
@@ -29,7 +34,7 @@ export default function Experience({children}){
                develop digital media skills, while making 
                unique educational materials for studnets.
               </Description>
-          </SubSection>
+          </SubSection> */}
         </Section>
     )
 }
